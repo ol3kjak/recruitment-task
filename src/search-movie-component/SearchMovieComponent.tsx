@@ -24,7 +24,7 @@ export const SearchMovieComponent = () => {
 
     useEffect(() => {
         if (searchValueRef.current?.value) {
-            axios.get(`http://www.omdbapi.com/?s=${searchValueRef.current?.value}&apikey=6185b8e5`)
+            axios.get(`https://www.omdbapi.com/?s=${searchValueRef.current?.value}&apikey=6185b8e5`)
                 .then(response => setMoviesData(response.data)
                 )
         }
