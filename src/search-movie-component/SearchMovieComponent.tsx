@@ -36,7 +36,10 @@ export const SearchMovieComponent = () => {
                 <input
                     type="text"
                     name="search_for"
+                    placeholder={'Search for?'}
                     ref={searchValueRef}
+                    autoFocus={true}
+                    onKeyDown={event => event.key === 'Enter' ? setSubmitSearch(!submitSearch) : null }
                 />
                 <button
                     className="button-margin"

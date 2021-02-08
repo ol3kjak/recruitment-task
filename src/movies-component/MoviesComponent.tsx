@@ -11,7 +11,7 @@ export const MoviesComponent: FC<MoviesDataTypes> = ({Title, Poster, Year, Key}:
     return (
         <div className="movie-block" key={Key}>
             <img
-                src={Poster !== 'N/A' ? Poster : ''}
+                src={Poster !== 'N/A' ? Poster : 'https://via.placeholder.com/200'}
                 alt={Poster !== 'N/A' ? `Poster for ${Title}` : `Poster for ${Title} not available`}
             />
             <p>{Title}</p>
